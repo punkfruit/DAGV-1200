@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Challenge 5: Refine Lighting & Final Render Scene.ma
-//Last modified: Sun, Sep 29, 2024 11:43:48 PM
+//Last modified: Sun, Sep 29, 2024 11:50:18 PM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiSkyDomeLight"
@@ -12,18 +12,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 14.6.1";
-fileInfo "UUID" "64E19ACB-4243-4048-C074-718B088B8EEA";
+fileInfo "UUID" "CB529CE0-3E4E-025A-D74A-8A82134BD65A";
 createNode transform -s -n "persp";
 	rename -uid "3D07727D-864A-DB00-6398-958DA9866079";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 11.349678986546966 7.45337786721353 12.685573217921588 ;
+	setAttr ".t" -type "double3" 26.740416845494124 11.190397233686394 19.353100542186809 ;
 	setAttr ".r" -type "double3" -17.399999999905688 -678.79999999998756 0 ;
 	setAttr ".rpt" -type "double3" -2.006552456314702e-15 -6.4384252797377582e-17 1.5399462018710818e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C707109C-5B41-7E53-06EF-E9BB13938DB0";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 21.003850340870603;
+	setAttr ".coi" 36.58237206441126;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
