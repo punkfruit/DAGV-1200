@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Lab 6 - Whitebox Outdoor Foundation Ground.ma
-//Last modified: Fri, Oct 04, 2024 10:07:50 PM
+//Last modified: Fri, Oct 04, 2024 10:11:09 PM
 //Codeset: UTF-8
 requires maya "2025ff03";
 requires "mtoa" "5.4.2.1";
@@ -10,20 +10,21 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Mac OS X 14.6.1";
-fileInfo "UUID" "FA0B7ACA-1041-0DAB-21F5-D7B87EC43E29";
+fileInfo "UUID" "6ECF5A83-EA48-8129-F750-72AFB532DA0D";
 createNode transform -s -n "persp";
 	rename -uid "E138EFE4-5349-F8F5-B9CF-61A884D2D5D2";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 18.266054772340993 2.2377742465338541 11.409855647022152 ;
-	setAttr ".r" -type "double3" -9.9383527296071978 51.000000000001485 1.2634878539998484e-15 ;
+	setAttr ".t" -type "double3" 22.107441510718932 6.1724976830484941 21.593542266250772 ;
+	setAttr ".r" -type "double3" -8.1383527296041098 41.800000000000495 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D69444DF-2D47-4DAE-FEF6-F7AAA4BB3DD5";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 20.698569745420411;
+	setAttr ".coi" 29.260795275626791;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
+	setAttr ".tp" -type "double3" 2.800586462020874 2.0302252769470215 0 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "CE404BD6-FC4A-1FA2-10C9-4AB4BF40999D";
